@@ -20,7 +20,7 @@ let att = [
 
 
 
-let call = att.filter((the)=>{
+module.exports.call =att.filter((the)=>{
     let withDiscount = {}
      if (the.price>=200&&the.price<900){
          return the.withDiscount=(the.price-(5/100*the.price))
